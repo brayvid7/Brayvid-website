@@ -1,134 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brayvid Fast Services</title>
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Fruit Bowls</title>
 
-header {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
 
-header h1 {
-    margin: 0;
-    font-size: 36px;
-}
+    /* HERO */
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1542444459-db47a8a6c4c0');
+      background-size: cover;
+      background-position: center;
+      height: 350px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
 
-header p {
-    font-size: 18px;
-    margin-top: 10px;
-}
+    .hero h1 {
+      font-size: 42px;
+      margin: 0;
+    }
 
-.buttons {
-    margin-top: 20px;
-}
+    .hero p {
+      font-size: 18px;
+    }
 
-.buttons a {
-    text-decoration: none;
-    padding: 12px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    color: white;
-    display: inline-block;
-}
+    /* CONTAINER */
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
 
-.call {
-    background: #28a745;
-}
+    /* SECTIONS */
+    .section {
+      margin-bottom: 40px;
+    }
 
-.whatsapp {
-    background: #25D366;
-}
+    h2 {
+      border-left: 5px solid #ff4d4d;
+      padding-left: 10px;
+    }
 
-section {
-    padding: 40px 20px;
-    text-align: center;
-}
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
 
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
 
-.service {
-    background: white;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 8px;
-    width: 250px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
+    .card:hover {
+      transform: scale(1.03);
+    }
 
-footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-</style>
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card p {
+      margin: 0;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .price {
+      font-weight: bold;
+      color: green;
+    }
+
+    /* BUTTON */
+    .btn {
+      display: block;
+      text-align: center;
+      background: #25D366;
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    .why {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Brayvid Fast Services</h1>
-    <p>Fast, Reliable Moving & Delivery in Alaska</p>
-    <p>By Appointment Only</p>
+<!-- HERO -->
+<div class="hero">
+  <h1>🍓 Fresh Fruit Bowls</h1>
+  <p>Ensaladas de frutas frescas con helado y toppings</p>
+</div>
 
-    <div class="buttons">
-        <a href="tel:+19072271115" class="call">Call Now</a>
-        <a href="https://wa.me/19072271115" class="whatsapp">WhatsApp</a>
+<div class="container">
+
+  <!-- ABOUT -->
+  <div class="section">
+    <h2>Sobre nosotros</h2>
+    <div class="why">
+      Preparamos ensaladas de frutas frescas al momento con ingredientes naturales, helado cremoso y toppings especiales. Ideal para algo refrescante y saludable.
     </div>
-</header>
+  </div>
 
-<section>
-    <h2>Our Services</h2>
-    <div class="services">
+  <!-- MENU -->
+  <div class="section">
+    <h2>Menú</h2>
+    <div class="grid">
 
-        <div class="service">
-            <h3>Furniture Pickup</h3>
-            <p>We pick up and deliver furniture safely and quickly.</p>
-        </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1572441710534-2a2c9a3c1b3d">
+        <p>Clásica<br><span class="price">$6</span></p>
+      </div>
 
-        <div class="service">
-            <h3>Small Moves</h3>
-            <p>Perfect for small apartments or single item moves.</p>
-        </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b">
+        <p>Con helado<br><span class="price">$8</span></p>
+      </div>
 
-        <div class="service">
-            <h3>Delivery Service</h3>
-            <p>Large item delivery that regular apps can't handle.</p>
-        </div>
-
-        <div class="service">
-            <h3>Hauling Service</h3>
-            <p>Transport of items, equipment, and more.</p>
-        </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb">
+        <p>Especial premium<br><span class="price">$10</span></p>
+      </div>
 
     </div>
-</section>
+  </div>
 
-<section>
-    <h2>Why Choose Us?</h2>
-    <p>✔ Fast response</p>
-    <p>✔ Reliable & careful service</p>
-    <p>✔ Flexible scheduling</p>
-    <p>✔ Affordable prices</p>
-</section>
+  <!-- WHY US -->
+  <div class="section">
+    <h2>¿Por qué elegirnos?</h2>
+    <div class="why">
+      ✔ Frutas frescas todos los días <br>
+      ✔ Preparado al momento <br>
+      ✔ Porciones generosas <br>
+      ✔ Sabor único en Alaska 🍓
+    </div>
+  </div>
 
-<footer>
-    <p>Brayvid Fast Services - Alaska</p>
-</footer>
+  <!-- CONTACT -->
+  <a class="btn" href="https://wa.me/1TU_NUMERO" target="_blank">
+    Pedir ahora por WhatsApp 📲
+  </a>
+
+</div>
 
 </body>
 </html>
