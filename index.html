@@ -3,14 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fresh Fruit Bowls</title>
+  <title>El Cartel Colombiano</title>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #333;
+      color: white;
+      background: linear-gradient(
+        135deg,
+        #ffcc00,   /* amarillo */
+        #0033a0,   /* azul */
+        #ce1126    /* rojo */
+      );
     }
 
     /* HERO */
@@ -18,39 +23,51 @@
       background-image: url('https://images.unsplash.com/photo-1542444459-db47a8a6c4c0');
       background-size: cover;
       background-position: center;
-      height: 350px;
-      color: white;
+      height: 380px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center;
       padding: 20px;
+      box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.4);
     }
 
     .hero h1 {
-      font-size: 42px;
+      font-size: 44px;
       margin: 0;
+      color: #ffcc00;
+      text-shadow: 2px 2px 10px black;
     }
 
     .hero p {
       font-size: 18px;
+      text-shadow: 2px 2px 10px black;
     }
 
-    /* CONTAINER */
+    .badge {
+      background: rgba(0,0,0,0.6);
+      display: inline-block;
+      padding: 6px 12px;
+      margin-top: 10px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
     .container {
       max-width: 1000px;
       margin: auto;
       padding: 20px;
     }
 
-    /* SECTIONS */
-    .section {
-      margin-bottom: 40px;
+    h2 {
+      color: #ffcc00;
+      text-shadow: 1px 1px 5px black;
     }
 
-    h2 {
-      border-left: 5px solid #ff4d4d;
-      padding-left: 10px;
+    .box {
+      background: rgba(0,0,0,0.6);
+      padding: 15px;
+      border-radius: 10px;
     }
 
     /* GRID */
@@ -61,15 +78,14 @@
     }
 
     .card {
-      background: white;
-      border-radius: 10px;
+      background: rgba(0,0,0,0.7);
+      border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       transition: transform 0.2s;
     }
 
     .card:hover {
-      transform: scale(1.03);
+      transform: scale(1.05);
     }
 
     .card img {
@@ -79,14 +95,14 @@
     }
 
     .card p {
-      margin: 0;
       padding: 10px;
+      margin: 0;
       text-align: center;
     }
 
     .price {
+      color: #00ff88;
       font-weight: bold;
-      color: green;
     }
 
     /* BUTTON */
@@ -102,30 +118,24 @@
       margin-top: 20px;
     }
 
-    .why {
-      background: white;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
   </style>
 </head>
 
 <body>
 
-<!-- HERO -->
 <div class="hero">
-  <h1>🍓 Fresh Fruit Bowls</h1>
-  <p>Ensaladas de frutas frescas con helado y toppings</p>
+  <h1>EL CARTEL COLOMBIANO 🇨🇴</h1>
+  <p>Ensaladas de frutas estilo callejero con sabor latino en Alaska</p>
+  <div class="badge">🔥 Fresco • Rápido • Hecho al momento</div>
 </div>
 
 <div class="container">
 
   <!-- ABOUT -->
   <div class="section">
-    <h2>Sobre nosotros</h2>
-    <div class="why">
-      Preparamos ensaladas de frutas frescas al momento con ingredientes naturales, helado cremoso y toppings especiales. Ideal para algo refrescante y saludable.
+    <h2>¿Quiénes somos?</h2>
+    <div class="box">
+      Somos <b>El Cartel Colombiano</b>, un emprendimiento latino en Alaska que ofrece ensaladas de frutas frescas con helado, toppings y estilo callejero auténtico 🇨🇴🍓
     </div>
   </div>
 
@@ -146,26 +156,49 @@
 
       <div class="card">
         <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb">
-        <p>Especial premium<br><span class="price">$10</span></p>
+        <p>Cartel Especial<br><span class="price">$10</span></p>
       </div>
 
     </div>
   </div>
 
-  <!-- WHY US -->
+  <!-- GALERÍA EXTRA -->
   <div class="section">
-    <h2>¿Por qué elegirnos?</h2>
-    <div class="why">
-      ✔ Frutas frescas todos los días <br>
-      ✔ Preparado al momento <br>
-      ✔ Porciones generosas <br>
-      ✔ Sabor único en Alaska 🍓
+    <h2>Más frescura 🍓</h2>
+    <div class="grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40">
+        <p>Frutas frescas</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1559628233-100c798642d4">
+        <p>Preparación al momento</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd">
+        <p>Estilo tropical</p>
+      </div>
+
     </div>
   </div>
 
-  <!-- CONTACT -->
-  <a class="btn" href="https://wa.me/1TU_NUMERO" target="_blank">
-    Pedir ahora por WhatsApp 📲
+  <!-- TRUST -->
+  <div class="section">
+    <h2>¿Por qué El Cartel?</h2>
+    <div class="box">
+      ✔ Sabor latino auténtico <br>
+      ✔ Fruta fresca diaria <br>
+      ✔ Porciones grandes <br>
+      ✔ Estilo callejero colombiano 🇨🇴🔥
+    </div>
+  </div>
+
+  <!-- ORDER -->
+  <a class="btn" href="https://wa.me/19072271115?text=Hola%20quiero%20ordenar%20de%20El%20Cartel%20Colombiano" target="_blank">
+    Ordenar ahora por WhatsApp 📲
   </a>
 
 </div>
