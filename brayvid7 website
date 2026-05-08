@@ -1,0 +1,135 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brayvid Fast Services</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+}
+
+.call {
+    background: #28a745;
+}
+
+.whatsapp {
+    background: #25D366;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service {
+    background: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Brayvid Fast Services</h1>
+    <p>Fast, Reliable Moving & Delivery in Alaska</p>
+    <p>By Appointment Only</p>
+
+    <div class="buttons">
+        <a href="tel:+19072271115" class="call">Call Now</a>
+        <a href="https://wa.me/19072271115" class="whatsapp">WhatsApp</a>
+    </div>
+</header>
+
+<section>
+    <h2>Our Services</h2>
+    <div class="services">
+
+        <div class="service">
+            <h3>Furniture Pickup</h3>
+            <p>We pick up and deliver furniture safely and quickly.</p>
+        </div>
+
+        <div class="service">
+            <h3>Small Moves</h3>
+            <p>Perfect for small apartments or single item moves.</p>
+        </div>
+
+        <div class="service">
+            <h3>Delivery Service</h3>
+            <p>Large item delivery that regular apps can't handle.</p>
+        </div>
+
+        <div class="service">
+            <h3>Hauling Service</h3>
+            <p>Transport of items, equipment, and more.</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Why Choose Us?</h2>
+    <p>✔ Fast response</p>
+    <p>✔ Reliable & careful service</p>
+    <p>✔ Flexible scheduling</p>
+    <p>✔ Affordable prices</p>
+</section>
+
+<footer>
+    <p>Brayvid Fast Services - Alaska</p>
+</footer>
+
+</body>
+</html>
