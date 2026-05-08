@@ -10,62 +10,57 @@
       margin: 0;
       font-family: Arial, sans-serif;
       color: white;
-      background: linear-gradient(
-        135deg,
-        #ffcc00,   /* amarillo */
-        #0033a0,   /* azul */
-        #ce1126    /* rojo */
-      );
+
+      /* Fondo base negro */
+      background-color: black;
+
+      /* Efecto bandera de Colombia en esquinas + centro frutal */
+      background-image:
+        radial-gradient(circle at top left, rgba(255, 204, 0, 0.35), transparent 40%),
+        radial-gradient(circle at top right, rgba(0, 51, 160, 0.35), transparent 40%),
+        radial-gradient(circle at bottom, rgba(206, 17, 38, 0.35), transparent 50%),
+        url('https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2');
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
 
     /* HERO */
     .hero {
-      background-image: url('https://images.unsplash.com/photo-1542444459-db47a8a6c4c0');
-      background-size: cover;
-      background-position: center;
-      height: 380px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
       text-align: center;
-      padding: 20px;
-      box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.4);
+      padding: 60px 20px 30px;
+      background: rgba(0,0,0,0.55);
+      border-radius: 12px;
+      margin: 20px;
     }
 
     .hero h1 {
       font-size: 44px;
       margin: 0;
       color: #ffcc00;
-      text-shadow: 2px 2px 10px black;
     }
 
     .hero p {
       font-size: 18px;
-      text-shadow: 2px 2px 10px black;
-    }
-
-    .badge {
-      background: rgba(0,0,0,0.6);
-      display: inline-block;
-      padding: 6px 12px;
       margin-top: 10px;
-      border-radius: 8px;
-      font-size: 14px;
     }
 
     .container {
       max-width: 1000px;
       margin: auto;
       padding: 20px;
+      background: rgba(0,0,0,0.55);
+      border-radius: 12px;
     }
 
     h2 {
       color: #ffcc00;
-      text-shadow: 1px 1px 5px black;
+      margin-top: 30px;
     }
 
     .box {
-      background: rgba(0,0,0,0.6);
+      background: rgba(255,255,255,0.08);
       padding: 15px;
       border-radius: 10px;
     }
@@ -75,10 +70,11 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 15px;
+      margin-top: 15px;
     }
 
     .card {
-      background: rgba(0,0,0,0.7);
+      background: rgba(0,0,0,0.6);
       border-radius: 12px;
       overflow: hidden;
       transition: transform 0.2s;
@@ -100,12 +96,7 @@
       text-align: center;
     }
 
-    .price {
-      color: #00ff88;
-      font-weight: bold;
-    }
-
-    /* BUTTON */
+    /* BOTÓN */
     .btn {
       display: block;
       text-align: center;
@@ -116,6 +107,7 @@
       text-decoration: none;
       font-size: 18px;
       margin-top: 20px;
+      font-weight: bold;
     }
 
   </style>
@@ -123,82 +115,60 @@
 
 <body>
 
+<!-- HERO -->
 <div class="hero">
   <h1>EL CARTEL COLOMBIANO 🇨🇴</h1>
-  <p>Ensaladas de frutas estilo callejero con sabor latino en Alaska</p>
-  <div class="badge">🔥 Fresco • Rápido • Hecho al momento</div>
+  <p>Ensaladas de frutas frescas estilo callejero en Alaska</p>
 </div>
 
 <div class="container">
 
   <!-- ABOUT -->
-  <div class="section">
-    <h2>¿Quiénes somos?</h2>
-    <div class="box">
-      Somos <b>El Cartel Colombiano</b>, un emprendimiento latino en Alaska que ofrece ensaladas de frutas frescas con helado, toppings y estilo callejero auténtico 🇨🇴🍓
-    </div>
+  <h2>¿Quiénes somos?</h2>
+  <div class="box">
+    Somos <b>El Cartel Colombiano</b>, un emprendimiento latino en Alaska que ofrece ensaladas de frutas frescas, con helado y estilo callejero auténtico 🇨🇴🍓
   </div>
 
-  <!-- MENU -->
-  <div class="section">
-    <h2>Menú</h2>
-    <div class="grid">
+  <!-- PRODUCTS -->
+  <h2>Productos</h2>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1572441710534-2a2c9a3c1b3d">
-        <p>Clásica<br><span class="price">$6</span></p>
-      </div>
+  <div class="grid">
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b">
-        <p>Con helado<br><span class="price">$8</span></p>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb">
-        <p>Cartel Especial<br><span class="price">$10</span></p>
-      </div>
-
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1562440499-64c9a111f713">
+      <p>Ensalada de frutas fresca</p>
     </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2">
+      <p>Bowl tropical de frutas</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40">
+      <p>Frutas mixtas naturales</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5">
+      <p>Fruit bowl premium</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1559628233-100c798642d4">
+      <p>Preparación al momento</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b">
+      <p>Con helado 🍨</p>
+    </div>
+
   </div>
 
-  <!-- GALERÍA EXTRA -->
-  <div class="section">
-    <h2>Más frescura 🍓</h2>
-    <div class="grid">
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40">
-        <p>Frutas frescas</p>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1559628233-100c798642d4">
-        <p>Preparación al momento</p>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd">
-        <p>Estilo tropical</p>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- TRUST -->
-  <div class="section">
-    <h2>¿Por qué El Cartel?</h2>
-    <div class="box">
-      ✔ Sabor latino auténtico <br>
-      ✔ Fruta fresca diaria <br>
-      ✔ Porciones grandes <br>
-      ✔ Estilo callejero colombiano 🇨🇴🔥
-    </div>
-  </div>
-
-  <!-- ORDER -->
-  <a class="btn" href="https://wa.me/19072271115?text=Hola%20quiero%20ordenar%20de%20El%20Cartel%20Colombiano" target="_blank">
-    Ordenar ahora por WhatsApp 📲
+  <!-- CTA -->
+  <a class="btn" href="https://wa.me/19072271115?text=Hola%20quiero%20ver%20los%20precios%20de%20El%20Cartel%20Colombiano" target="_blank">
+    📲 Preguntar precios por WhatsApp
   </a>
 
 </div>
